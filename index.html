@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Peluquería Pepa</title>
+    <link rel="stylesheet" href="css/index.css"> <!-- Enlaza la hoja de estilos externa -->
+</head>
+
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <div class="container">
+            <p class="logo">Peluquería Pepa</p>
+            <!-- Navegación principal -->
+            <nav>
+                <a href="#somos-pelupepa">Quienes Somos</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+                <button id="styleSwitcher1">Cambiar Color</button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Sección Hero -->
+    <section id="hero">
+        <h1>Refleja tu Esencia <br>Vive con Elegancia</h1>
+        <!-- Formulario de contacto asociado a la sección Hero --> 
+        <form action="contacto.html">
+            <button>RESERVA UNA CITA</button>
+        </form>
+    </section>
+
+    <!-- Sección "Somos Peluquería Pepa" -->
+    <section id="somos-pelupepa">
+        <div class="container">
+             <!-- Contenedor de imagen -->
+            <div class="img-container"></div>
+            <!-- Contenedor de texto -->
+            <div class="texto">
+                <h2>Somos <span class="color-name">Peluquería Pepa</span></h2>
+                <p>En Peluquería Pepa, no solo transformamos tu cabello, creamos experiencias de belleza que reflejan tu esencia y realzan tu elegancia. Con una dedicación apasionada por la estética capilar y un compromiso inquebrantable con la satisfacción del cliente, nos enorgullece ser más que una simple peluquería.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="button-container">
+        <button id="toggleInfo">Más sobre Peluquería Pepa</button> <!-- Botón para mostrar información adicional -->
+    </div>
+    <div id="additionalInfo" style="display: none;">
+        <p id="infoText">La Peluquería Pepa, fundada hace más de tres décadas por la carismática estilista Pepa Vidal, es un pequeño oasis de estilo en medio del bullicioso barrio urbano. Desde su apertura, ha sido un punto de referencia para la comunidad local, ofreciendo cortes y estilos que reflejan la personalidad de cada cliente. Hoy en día, la Peluquería Pepa sigue siendo un lugar donde la autoexpresión es celebrada y las amistades se forman.</p>
+    </div>
+            
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Peluquería Pepa</p>    
+        </div>
+    </footer>
+
+     <!-- Scripts -->
+     <script src="js/scripts.js"></script> 
+</body>
+
+</html>

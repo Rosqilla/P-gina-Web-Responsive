@@ -1,0 +1,489 @@
+/* Establece el modelo de caja para todos los elementos */
+*{
+    box-sizing: border-box;
+}
+
+/* Activa el desplazamiento suave en el documento HTML */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Estilos generales del cuerpo de la página */
+body{
+    font-family: 'Roboto' , sans-serif;
+    margin: 0;
+}
+
+/* Estilos de los diferentes tamaños de texto */
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+/* Estilos del botón */
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid ;
+    box-shadow: 2px 2px 10px grey;
+    color: white;
+    background-color: palevioletred;
+    transition: background-color 0.3s ease; 
+    cursor: pointer
+}
+
+/* Cambia el color del boon al pasar el cursor por encima*/
+button:hover{
+    background-color: palevioletred;
+}
+
+/* Estilos del contenedor principal */
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Estilos del color específico */
+.color-name{ color: palevioletred; }
+
+/* Estilos del encabezado */
+header{
+    background-color: whitesmoke;
+}
+
+/* Estilos del logotipo en el encabezado */
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: palevioletred;
+    font-size: 1.6em;
+}
+
+/* Estilos del contenido del encabezado */
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos de la navegación en el encabezado */
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/* Estilos de los enlaces de la navegación en el encabezado */
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* Cambia el color del texto de los enlaces en el encabezado al pasar el ratón sobre ellos */
+header a:hover{
+    color:palevioletred;
+}
+
+/* Estilos para la sección hero (encabezado de página) */
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/utensilios-peluquería.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Estilos específicos para el título h1 dentro de la sección hero */
+#hero h1{
+    color: white;
+}
+
+/* Estilos para la sección "Somos PeluPepa" dentro del contenedor */
+#somos-pelupepa .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+/* Estilos para la sección de servicios */
+#servicios{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+/* Estilos para el contenedor de la sección de servicios */
+#servicios .container{
+    padding: 200px 0px;
+}
+
+/* Estilos para el título h2 dentro de la sección de servicios */
+#servicios h2{
+    margin-top: 0;
+    font-size: 3.5em;
+}
+
+/* Oculta los párrafos dentro de la sección de servicios */
+#servicios p{
+    display: none;
+}
+
+/* Estilos para las "cartas" de servicios */
+#servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/* Estilos para la primera "carta" de servicios */
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/corte-pelo.jpg");
+}
+
+/* Estilos para la segunda "carta" de servicios */
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/coloración.jpg");
+}
+
+/* Estilos para la tercera "carta" de servicios */
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../imagenes/pelucas-extensiones.jpg");
+}
+
+/* Estilos para el contenedor en la sección de contacto */
+#contacto .container{
+    text-align:center;
+}
+
+/* Estilos para el formulario en la sección de contacto */
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Estilos para las etiquetas en el formulario de contacto */
+#contacto form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilos para los campos de entrada y áreas de texto en el formulario */
+#contacto form input,
+#contacto form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de envío en el formulario */
+#contacto form button {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid ;
+    box-shadow: 2px 2px 10px grey;
+    color: white;
+    background-color: palevioletred;
+    cursor: pointer;
+}
+
+/* Estilos para el botón de envío al pasar el ratón sobre él */
+#contacto form button:hover {
+    background-color: #d9534f; 
+}
+
+/* Estilos para la sección en la página de contacto */
+#contacto section {
+    margin-bottom: 40px;
+}
+
+/* Estilos para el título h2 en la sección de contacto */
+#contacto h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los párrafos en la sección de contacto */
+#contacto p {
+    font-size: 1.2em;
+}
+
+/* Media query para pantallas con un ancho mínimo de 720px */
+@media (min-width: 720px){
+    /* Estilos específicos para la barra de navegación en el encabezado */
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+     /* Ajusta la disposición de los elementos en el contenedor del encabezado */
+    header .container{
+        flex-direction: row;
+    }
+
+    /* Ajusta la disposición de los elementos en la barra de navegación */
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    /* Ajusta el tamaño del título principal en la sección hero */
+    #hero h1{
+        font-size: 5em;
+    }
+
+    /* Acomoda los elementos en la sección "Somos PeluPepa" */
+    #somos-pelupepa .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* Estilos específicos para el texto en la sección "Somos PeluPepa" */
+    #somos-pelupepa .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Ajusta el margen superior del título en "Somos PeluPepa" */
+    #somos-pelupepa h2{
+        margin-top: 0px;
+    }
+
+    /* Estilos para la imagen en "Somos PeluPepa" */
+    #somos-pelupepa .img-container{
+        background-image: url("../imagenes/peluqueria.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    /* Acomoda los elementos en la sección "Servicios" */
+    #servicios .peticiones{
+        display: list-item;
+        justify-content: center;
+    }
+
+    /* Muestra el párrafo en la sección de servicios */
+    #servicios p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    /* Ajusta el margen superior del título en la sección de servicios */
+    #servicios h3{
+        margin-top: 0;
+    }
+
+    /* Estilos específicos para las "cartas" de servicios en pantallas más grandes */
+    #servicios .carta{
+        padding: 30px;
+        background-repeat: no-repeat;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    
+    
+}
+
+/* Estilos para el botón de mostrar/ocultar información adicional */
+#toggleInfo {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid ;
+    box-shadow: 2px 2px 10px grey;
+    color: white;
+    background-color: palevioletred;
+    cursor: pointer
+}
+
+/* Estilos cuando el cursor está sobre el botón */
+#toggleInfo:hover {
+    background-color: #d9534f; 
+}
+
+/* Estilos para el contenedor del botón */
+#button-container {
+    text-align: center; 
+}
+
+/* Informacion adicional */
+#additionalInfo {
+    display: none; 
+    text-align: center; 
+    padding-top: 20px; 
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+#infoText {
+    /* Estilos adicionales para el texto */
+    line-height: 1.5; 
+}
+
+/* Formulario */
+#encuesta, #resultados {
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+button {
+    margin-right: 10px;
+    background-color: palevioletred; 
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    cursor: pointer
+}
+
+button:hover {
+    background-color: #d9534f; 
+}
+
+span {
+    font-weight: bold;
+}
+
+#encuesta, #mejorar {
+    text-align: center;
+}
+
+#mejorar label {
+    font-size: 1.5em; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para los botones de cambio de estilo */
+#styleSwitcher1, #styleSwitcher2, #styleSwitcher3  {
+    font-size: 12px; 
+    padding: 6px 10px; 
+}
+
+/* Estilos para el contenedor del carrusel de imágenes */
+.slideshow-container {
+    position: relative;
+    max-width: 300px;
+    margin: auto;
+    
+}
+
+/* Estilos para el título del carrusel de imágenes */
+.slideshow-container h2 {
+    color: white;
+    text-align: center;
+}
+
+/* Estilos para las imágenes del carrusel */
+.mySlides img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Animación de desvanecimiento para las imágenes del carrusel */
+.fade {
+    animation-name: fade; 
+    animation-duration: 1.5s; 
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Estilos para los botones de navegación del carrusel */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    margin-top: -22px;
+    color: palevioletred;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Estilos para el botón previo del carrusel */
+.prev {
+    left: 0;
+}
+
+/* Estilos para el botón siguiente del carrusel */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Estilos para las "cartas" de servicios */
+#servicios .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    color: white; /* Ajuste para el color del texto */
+}
+
+/* He añadido esto porque el carrusel me quedaba por encima del header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+/* He añadido esto porque el carrusel me quedaba por encima del header */
+#servicios {
+    margin-top: 100px; 
+}

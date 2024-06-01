@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios - Peluquería Pepa</title>
+    <link rel="stylesheet" href="css/index.css"> 
+    <script src="js/servicios.js" defer></script> 
+</head>
+
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <div class="container">
+            <p class="logo">Peluquería Pepa</p>
+            <!-- Navegación principal -->
+            <nav>
+                <a href="index.html">Quienes Somos</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+                <button id="styleSwitcher2">Cambiar Color</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios">
+        <div class="container">
+            <h2>Servicios</h2>
+
+            <!-- Contenedor de "cartas" de servicios -->
+            <div class="peticiones">
+                <!-- Primera "carta" de servicio: Cortes de Pelo -->
+                <div class="carta">
+                    <h3>Cortes de Pelo</h3>
+                    <p>En nuestra casa de estilistas, creemos que un corte de pelo no es solo una transformación estética, sino una manifestación única de tu personalidad y estilo. Nuestro equipo de talentosos estilistas está dedicado a ofrecer cortes que no solo realcen tu belleza natural, sino que también expresen tu esencia de una manera auténtica.</p>
+                    <!-- Formulario de contacto asociado a este servicio -->
+                    <form action="contacto.html">
+                        <button>+ Info</button>
+                    </form>    
+                </div>
+
+                <!-- Segunda "carta" de servicio: Coloración -->
+                <div class="carta">
+                    <h3>Coloración</h3>
+                    <p>En Peluquería Pepa, entendemos que el color del cabello es una forma vibrante de expresar tu personalidad y resaltar tu estilo único. Nuestros expertos estilistas están aquí para llevarte en un viaje de descubrimiento, explorando las infinitas posibilidades de la coloración capilar.</p>
+                    <!-- Formulario de contacto asociado a este servicio -->
+                    <form action="contacto.html">
+                        <button>+ Info</button>
+                    </form>    
+                </div>
+                
+                <!-- Tercera "carta" de servicio: Pelucas y Extensiones -->
+                <div class="carta">
+                    <h3>Pelucas y Extensiones</h3>
+                    <p>En nuestro rincón de belleza, ofrecemos más que un servicio; proporcionamos la oportunidad de explorar nuevas dimensiones de estilo y confianza. Descubre la versatilidad y la emoción con nuestras pelucas y extensiones en Peluquería Pepa.</p>
+                    <!-- Formulario de contacto asociado a este servicio -->
+                    <form action="contacto.html">
+                        <button>+ Info</button>
+                    </form>   
+                </div>
+                <!-- Carrusel de Imágenes -->
+                <div class="slideshow-container">
+                    <h2 id="carrusel-titulo">Resultado de Cortes</h2>
+                    <div class="mySlides fade">
+                        <img src="imagenes/corte-pelo-1.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img src="imagenes/corte-pelo-2.jpg" style="width:100%">
+                    </div>
+
+                <div class="mySlides fade">
+                        <img src="imagenes/corte-pelo-3.jpg" style="width:100%">
+                    </div>
+                
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Peluquería Pepa</p>    
+        </div>
+    </footer>
+</body>
+
+</html>
